@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      height: 72px;
+      box-shadow: 0px -1px 23px 0px rgba(0,0,0,0.4);
+    }
+    .logo-container { 
+      display: flex;
+      align-items: center;
+      padding: 24px;
+    }
+    .categories {
+      color: rgb(85, 85, 85);
+      padding: 15px;
+      cursor: pointer;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+    .search-bar {
+      width: 720px;
+      height: 37px;
+      padding: 5px;
+      padding-left: 20px;
+      border-radius: 50px;
+      border: solid;
+      border-color: rgb(110, 110, 110);
+    }
+
+   .button-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .text {
+      padding: 20px;
+      color: rgb(110, 110, 110);
+    }
+    #shopping-cart{
+      width: 22px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .buttons {
+      padding: 10px;
+      margin-left: 10px;
+      background-color: white;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: solid;
+      text-decoration: none;
+      transition: all 0.15s ease-in;
+    }
+
+    .buttons:hover {
+      background-color: black;
+      border-color: black;
+      color: white;
+      text-decoration: none;
+    }
+
+    .buttons:active {
+      background-color: rgb(110, 110, 110);
+      border-color: rgb(110, 110, 110);
+      text-decoration: none;
+    }
+
+    .main-image {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 70px;
+    }
+    .main-img-file{
+      width: 1350px;
+    }
+    .secondary-image{
+      padding-bottom: 20px;
+    }
+    .secondary-img-file {
+      width: 98vw;
+    }
+    .instructor{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+    .instructor-photo{
+      width: 400px;
+      padding: 60px;
+      margin-bottom: 20px;
+    }
+    .instructor-para {
+      width: 450px;
+      font-size: 20px;
+    }
+    .instructor-headline {
+      font-weight: 700;
+      font-size: 35px;
+    }
+
+    .footer {
+      background-color: black;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-text {
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 30px;
+    }
+    .author{
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      padding-right: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="logo-container">
+      <a href="index.html"><img src="images/logo-udemy.png" style="cursor: pointer;"></a>
+      <span class="categories">Categories</span>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search for anything">
+    </div>
+    <div class="button-container">
+      <div class="text" style="cursor: pointer;">Careers</div>
+      <div class="text" style="cursor: pointer;">Udemy Business</div>
+      <div class="shopping-cart">
+        <img id="shopping-cart" src="images/shopping-cart-icon.png">
+      </div>
+      <a href="login.html" class="buttons">Log in</a>
+      <a href="register.html" class="buttons">Register</a>
+    </div>
+  </div>
+
+  <div class="main-body">
+    <div class="main-image">
+      <img src="images/Main-image.png" class="main-img-file">
+    </div>
+    <div class="secondary-image">
+      <img src="images/secondary-image.png" class="secondary-img-file">
+    </div>
+    <div class="instructor">
+      <img src="images/become-instructor.png" class="instructor-photo">
+      <div class="instructor-para"><p class="instructor-headline">Become an instructor</p>
+      <p>Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills to teach what you love.</p></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      Top companies choose Udemy Business to build in-demand career skills.
+    </div>
+    <div class="author">
+      Made by : Arpit Garg
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+  }
+
+  .login-container h2 {
+      text-align: center;
+      color: #333;
+  }
+
+  .login-form {
+      margin-top: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+  }
+
+  .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  .form-group button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+  }
+
+  .form-group button:hover {
+      background-color: #45a049;
+  }
+</style>

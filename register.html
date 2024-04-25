@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Nutrition | Register Page</title>
+    <style>
+        .main-body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            background-image: url('tgr.png');
+            background-size: contain;   
+        }
+
+        .register-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px black;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .register-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .register-form {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background-color: orange;
+            color: #fff;
+            padding: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .form-group button:hover {
+            background-color: darkorange;
+        }
+        .logo-container{
+            display: flex;
+            align-items:center;
+            justify-content: center ;
+            padding: 30px;
+            height: 250px;
+
+        }
+        .error {
+            min-height: 10px;
+            color: red;
+            font-size: 8px;
+            margin-left: 4px;
+    }
+        
+    </style>
+</head>
+<body>
+        <div class="logo-container">
+            <div class="logo">
+            <img src="logo.jpg" style="width: 400px;">
+            </div>
+        </div>    
+
+<div class="main-body">
+    <div class="register-container">
+        <h2>Register</h2>
+    <div class="register-form">
+        <form action="home.html" onsubmit="return validate()">
+    
+            <div class="form-group">
+                <label for="FullName">FullName</label>
+                <input type="text" id="fullname">
+            </div>
+    
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email id</label>
+                <input type="text" id="email">
+            </div>
+    
+            <div class="form-group">
+                <label for="mobile">Mobile number</label>
+                <input type="tel" id="mobile">
+            </div>
+    
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+    
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass">
+            </div>
+    
+            <div class="form-group">
+                <label for="confirmpass">Confirm Password</label>
+                <input type="password" id="confirmpass">
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+        <script src="ass2.js"></script>
+    </body>
+    </html>
+            

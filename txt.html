@@ -1,0 +1,337 @@
+    <div class="categories">
+        <div class="sbc">Unleash Your Peak Performance: Pick by a Category</div>
+        <div class="category">
+            <img src="protein.jpg">
+            <p>Power Lifting & Weight Training</p>
+        </div>
+        <div class="category">
+            <img src="performance.jpg" >
+            <p>Performance & Muscle gain</p>
+        </div>
+        <div class="category">
+            <img src="diet.jpg" >
+            <p>Fat & Weight Loss</p>
+        </div>
+        <div class="category">
+            <img src="health.jpg">
+            <p>Health & Wellness</p>
+        </div>
+    </div>
+
+    .categories {
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        }
+        .sbc{
+            display: flex;
+            flex-direction: row;
+        }
+        .category {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        }
+        .category img {
+        max-width: 100px;
+        height: auto;
+        }
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      height: 13vh;
+      width: 100%;
+      justify-content: space-between;
+      background-color: white;
+    }
+    .logo-container { 
+      display: flex;
+      align-items: center;
+      padding: 24px;
+    }
+    .categories {
+      color: rgb(85, 85, 85);
+      padding: 15px;
+      cursor: pointer;
+    }
+
+   .button-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 3%;
+
+    }
+    .text {
+      padding: 20px;
+      color: rgb(110, 110, 110);
+    }
+    #shopping-cart{
+      width: 22px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .log-buttons {
+      padding: 10px;
+      margin-left: 10px;
+      background-color: white;
+      color: black;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: solid;
+      text-decoration: none;
+      transition: all 0.15s ease-in;
+      border-color: black;
+    }
+
+    .log-buttons:hover {
+      background-color: rgb(110, 110, 110);
+      border-color: rgb(110, 110, 110);
+      color: white;
+      text-decoration: none;
+    }
+
+    .log-buttons:active {
+      background-color: rgb(110, 110, 110);
+      border-color: rgb(110, 110, 110);
+      text-decoration: none;
+    }
+
+    .reg-buttons {
+      padding: 10px;
+      margin-left: 10px;
+      background-color: black;
+      color: white;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: solid;
+      text-decoration: none;
+      transition: all 0.15s ease-in;
+      border-color: black;
+    }
+
+    .reg-buttons:hover {
+      background-color: gray;
+      border-color: gray;
+      text-decoration: none;
+    }
+
+    .reg-buttons:active {
+      background-color: rgb(77, 77, 77);
+      border-color: rgb(77, 77, 77);
+      text-decoration: none;
+    }
+
+    .main-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .google-login {
+      display: flex;
+      align-items: center;
+      width: 350px;
+      height: 50px;
+      background-color: white;
+      border-width: 1px;
+    }
+    .main-content {
+      padding: 10px;
+      font-weight: 800;
+    }
+    .input {
+      width: 326px;
+      height: 50px;
+      background-color: white;
+      border-width: 1px;
+    }
+    .input-container{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+    .input{
+      margin: 5px;
+      padding-left: 20px;
+    }
+    .input::placeholder {
+      font-weight: 700;
+    }
+    .login-button {
+      width: 350px;
+      height: 50px;
+      border: none;
+      background-color: rgb(164, 53, 240);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .forget-password {
+      font-size: 13px;
+      padding-top: 30px;
+      font-weight: 500;
+      color: black;
+      padding-bottom: 80px;
+    }
+    .forget-password u {
+      cursor: pointer;
+    }
+
+    .Send-me {
+      width: 250px;
+      font-size: 13px;
+      padding-top: 25px;
+      padding-right: 100px;
+      font-weight: 500;
+      color: black;
+      padding-bottom: 25px;
+    }
+    .error {
+      min-height: 10px;
+      color: red;
+      font-size: 8px;
+      margin-left: 4px;
+    }
+
+    .footer {
+      background-color: black;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-text {
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 30px;
+    }
+    .author{
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      padding-right: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="logo-container">
+      <a href="index.html"><img src="images/logo-company.png" style="cursor: pointer; width: 80px;"></a>
+      <div class="text"><span style="cursor: pointer;"><ahref="login.html">Home</a></span></div>
+      <div class="text"><span style="cursor: pointer;">Explore</span></div>
+      <div class="text"><span style="cursor: pointer;">Pricing</span></div>
+      <div class="text"><span style="cursor: pointer;">About Us</span></div>
+    </div>
+    <div class="button-container">
+      <div class="shopping-cart">
+        <img id="shopping-cart" src="images/shopping-cart-icon.png">
+      </div>
+      <a href="login.html" class="log-buttons">Log in</a>
+      <a href="register.html" class="reg-buttons">Register</a>
+    </div>
+  </div>
+
+  <div class="main-body">
+    <form>
+      <div class="main-content">Sign up and start learning</div>
+  
+      <div class="input-container">
+       <input type="text" class="input" placeholder="Full Name"><div class="Name-req error"></div>
+       <input type="text" class="input" placeholder="Email"><div class="Email-req error"></div>
+       <input type="text" class="input  " placeholder="Password"><div class="Pass-req error"></div>
+      </div>
+    
+      <div class="Send-me">Send me Special offers, personalized recommendations, and learning tips.</div>
+      <button class="login-button">Sign Up</button>
+      <div class="forget-password">By signing up, you agree to our <u>Terms of Use</u> and <u>Privacy Policy</u>.</div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      Top companies choose LearnHub Business to build in-demand career skills.
+    </div>
+    <div class="author">
+      Made by : Arpit Garg
+    </div>
+  </div>
+  <script src="Reg-script.js"></script>
+</body>
+</html>
+
+`document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      const fullNameInput = document.querySelector(
+        'input[placeholder="Full Name"]'
+      );
+      const emailInput = document.querySelector('input[placeholder="Email"]');
+      const passwordInput = document.querySelector(
+        'input[placeholder="Password"]'
+      );
+      const fullNameError = document.querySelector(".Name-req");
+      const emailError = document.querySelector(".Email-req");
+      const passError = document.querySelector(".Pass-req");
+  
+      let isValid = true;
+  
+      const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const passRegex = /^(?=.\d)(?=.[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  
+      if (!nameRegex.test(fullNameInput.value.trim())) {
+        fullNameError.textContent = "Enter your Full Name";
+        isValid = false;
+      } else {
+        fullNameError.textContent = "";
+      }
+  
+      if (!emailRegex.test(emailInput.value.trim())) {
+        emailError.textContent = "Enter a valid Email address";
+        isValid = false;
+      } else {
+        emailError.textContent = "";
+      }
+  
+      if (!passRegex.test(passwordInput.value.trim())) {
+        passError.textContent =
+          "Enter a valid Password with minmum of 8 characters, 1 digit, 1 uppercase and 1 lowercase letter";
+        isValid = false;
+      } else {
+        passError.textContent = "";
+      }
+  
+      if (isValid) {
+        window.location.href = "index.html";
+        alert("You have successfully signed up!");
+      }
+    });
+  });
+  `
